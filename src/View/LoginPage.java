@@ -7,9 +7,9 @@ import javax.swing.*;
 
 public class LoginPage extends JFrame implements ActionListener {
     
-    JLabel Header = new JLabel("Silahkan Login");
-    JLabel LabelUsername = new JLabel("Username");
-    JLabel LabelPassword = new JLabel("Password");
+    JLabel Header = new JLabel("LOGIN");
+    JLabel LabelUsername = new JLabel("Username : ");
+    JLabel LabelPassword = new JLabel("Password : ");
     
     JTextField inputUsername = new JTextField();
     JPasswordField inputPassword = new JPasswordField();
@@ -17,7 +17,7 @@ public class LoginPage extends JFrame implements ActionListener {
     JButton tombolLogin = new JButton("Login");
     JButton tombolReset = new JButton("Reset");
 
-    private static final String USERNAME_VALID = "123230016";
+    private static final String USERNAME_VALID = "Ayudya Prameswari";
     private static final String PASSWORD_VALID = "123230016";
     
     public LoginPage() {
@@ -28,27 +28,25 @@ public class LoginPage extends JFrame implements ActionListener {
         setLayout(null);
         setLocationRelativeTo(null);
         
-        getContentPane().setBackground(Color.PINK);
-        
         add(Header);
-        Header.setBounds(20, 20, 440, 24);
+        Header.setBounds(165, 30, 440, 24);
         Header.setFont(Header.getFont().deriveFont(20.0f));
         add(LabelUsername);
         LabelUsername.setBounds(40, 80, 440, 24);
         add(LabelPassword);
-        LabelPassword.setBounds(40, 140, 440, 24);
+        LabelPassword.setBounds(40, 120, 440, 24);
         
         add(inputUsername);
-        inputUsername.setBounds(150, 80, 200, 24);
+        inputUsername.setBounds(120, 80, 230, 24);
         add(inputPassword);
-        inputPassword.setBounds(150, 140, 200, 24);
+        inputPassword.setBounds(120, 120, 230, 24);
         
         add(tombolLogin);
-        tombolLogin.setBounds(90, 200, 100, 30);
+        tombolLogin.setBounds(40, 180, 310, 30);
         tombolLogin.addActionListener(this);
 
         add(tombolReset);
-        tombolReset.setBounds(210, 200, 100, 30);
+        tombolReset.setBounds(40, 220, 310, 30);
         tombolReset.addActionListener(this);
     }
 
