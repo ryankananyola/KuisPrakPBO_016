@@ -29,7 +29,7 @@ public class LoginPage extends JFrame implements ActionListener {
         setLocationRelativeTo(null);
         
         add(Header);
-        Header.setBounds(165, 30, 440, 24);
+        Header.setBounds(160, 30, 440, 24);
         Header.setFont(Header.getFont().deriveFont(20.0f));
         add(LabelUsername);
         LabelUsername.setBounds(40, 80, 440, 24);
@@ -37,16 +37,16 @@ public class LoginPage extends JFrame implements ActionListener {
         LabelPassword.setBounds(40, 120, 440, 24);
         
         add(inputUsername);
-        inputUsername.setBounds(120, 80, 230, 24);
+        inputUsername.setBounds(120, 80, 220, 24);
         add(inputPassword);
-        inputPassword.setBounds(120, 120, 230, 24);
+        inputPassword.setBounds(120, 120, 220, 24);
         
         add(tombolLogin);
-        tombolLogin.setBounds(40, 180, 310, 30);
+        tombolLogin.setBounds(40, 180, 300, 30);
         tombolLogin.addActionListener(this);
 
         add(tombolReset);
-        tombolReset.setBounds(40, 220, 310, 30);
+        tombolReset.setBounds(40, 220, 300, 30);
         tombolReset.addActionListener(this);
     }
 
